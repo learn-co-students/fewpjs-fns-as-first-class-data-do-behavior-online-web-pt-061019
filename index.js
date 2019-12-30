@@ -18,12 +18,14 @@ function greet(time) {
     else if ((intTime > 11) && (intTime < 18)) {
     return 'Good Afternoon';
   } 
-    else {
-    return 'Good Night';
+    else if ((intTime > 17) && (intTime < 25)) {
+    return 'Good Evening';
   }
 }
 
 /* Write your implementation of displayMessage() */
 // function displayMessage() {
-
+function displayMessage(message) {
+  document.getElementById('greeting').innerText = `${message}`;
+}
 // }
