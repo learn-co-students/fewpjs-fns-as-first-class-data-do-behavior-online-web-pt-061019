@@ -44,5 +44,6 @@ function greet(string) {
 
 function displayMessage(string) {
   const greeting = document.querySelector('h1');
-  greeting.innerText = greet();
+  // greeting.innerText = greet(string);
+  greeting.innerText = string;
 }
